@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row row-cols-3">
+    <div class="p-0" *ngFor="let carro of carros">
+      <div class="card m-3 p-3">
+        <img
+          src="../../../assets/img/mustang 429.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <th>modelo</th>
+              <th>ano</th>
+              <th>km</th>
+              <th>cor</th>
+            </thead>
+            <tr>
+              <td>{{ carro.model }}</td>
+              <td>{{ carro.year }}</td>
+              <td>{{ carro.km }}</td>
+              <td>{{ carro.color }}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
